@@ -474,10 +474,13 @@ a {
 
 .subcribe-text {
   margin-bottom: 16px;
+  font-weight: 500;
+  color: #fff;
 }
 .subcribe-form {
   display: flex;
   min-width: 453px;
+  gap: 24px;
 }
 .subcribe-input-box {
   width: 264px;
@@ -561,7 +564,7 @@ a {
   position: absolute;
   top: 50%;
   left: 50%;
-
+  padding: 72px 24px 24px 24px;
   width: 408px;
   min-height: 584px;
   border-radius: 4px;
@@ -578,30 +581,53 @@ a {
 
 .modal-close {
   position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   top: 24px;
   right: 24px;
   background-color: #e7e9fc;
   width: 24px;
   height: 24px;
-
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
   padding: 0;
   border: 1px solid rgba(0, 0, 0, 0.1);
   stroke-width: 1px;
   border-radius: 50%;
   cursor: pointer;
 }
+.modal-close:hover,
+.modal-close:focus {
+  background-color: #404bbf;
+  border: none;
+}
+.close-icon {
+  fill: #2e2f42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.modal-close:hover > .close-icon,
+.modal-close:focus > .close-icon {
+  fill: #ffffff;
+}
 .form-text-main {
   font-weight: 500;
-
-  margin: 72px 24px 16px 24px;
+  text-align: center;
+  color: #2e2f42;
 }
 .form {
   width: 360px;
   min-height: 336px;
   margin: 0 auto;
 }
+
 .form-label {
+  display: block;
   font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  margin-bottom: 4px;
   color: #8e8f99;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -644,7 +670,7 @@ a {
 }
 .form-input {
   width: 100%;
-  height: 100%;
+  height: 40px;
   padding-left: 38px;
   font-size: 16px;
 
@@ -707,6 +733,9 @@ textarea ::placeholder {
   text-decoration: underline;
 }
 .button-send {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
   font-family: inherit;
   font-weight: 500;
