@@ -423,6 +423,24 @@ d<!DOCTYPE html>
             </li>
           </ul>
         </div>
+        <div class="subcribe">
+          <p class="footer-text subcribe-text">Subscribe</p>
+          <form class="subcribe-form">
+            <div class="subcribe-input-box">
+              <label class="visually-hidden" for="email">Email</label>
+              <input
+                class="subcribe-input"
+                type="email"
+                name="email"
+                id="email"
+                placeholder="Email" />
+            </div>
+            <button type="submit" class="subcribe-button">Subscribe
+            <svg class="subcribe-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-send"></use>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <div class="bachdrop" data-modal>
@@ -490,6 +508,24 @@ d<!DOCTYPE html>
                 rows="5">
               </textarea>
             </div>
+          </div>
+          <div class="checkbox-field">
+            <input
+              class="checkbox-input visually-hidden"
+              type="checkbox"
+              name="privacy"
+              id="privacy"
+              value="true" />
+            <label class="checkbox-label" for="privacy">
+              <span class="checkbox-custom">
+                <svg class="checkbox-custom-icon" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use></svg
+              ></span>
+              I accept the terms and conditions of the
+              <a href="https://example.com/privacy-policy" class="privacy-link"
+                >Privacy Policy</a
+              >
+            </label>
           </div>
           <button type="button" class="button-send">Send</button>
         </form>
