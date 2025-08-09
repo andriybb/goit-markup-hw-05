@@ -668,7 +668,7 @@ a {
   margin-bottom: 8px;
 }
 
-.icon-person {
+svg.icon-person {
   position: absolute;
 
   left: 16px;
